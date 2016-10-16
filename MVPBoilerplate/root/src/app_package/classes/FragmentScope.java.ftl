@@ -1,4 +1,4 @@
-package ${packageName}.injection;
+package ${packageName}.injection.scopes;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

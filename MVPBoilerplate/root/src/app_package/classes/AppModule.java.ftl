@@ -14,20 +14,12 @@ public final class AppModule
     @NonNull
     private final ${appClass} mApp;
 
-    public AppModule(@NonNull ${appClass} app)
-    {
+    public AppModule(@NonNull Application app) {
         mApp = app;
     }
 
     @Provides
-    public Context provideAppContext()
-    {
-        return mApp;
-    }
-
-    @Provides
-    public ${appClass} provideApp()
-    {
+    public Application provideApp() {
         return mApp;
     }
 }

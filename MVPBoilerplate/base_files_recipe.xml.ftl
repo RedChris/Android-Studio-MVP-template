@@ -9,29 +9,26 @@
        to="${escapeXmlAttribute(srcOut)}/injection/AppModule.java" />
 
     <instantiate from="src/app_package/classes/ActivityScope.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/injection/ActivityScope.java" />
+      to="${escapeXmlAttribute(srcOut)}/injection/scopes/ActivityScope.java" />
 
     <instantiate from="src/app_package/classes/FragmentScope.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/injection/FragmentScope.java" />
+      to="${escapeXmlAttribute(srcOut)}/injection/scopes/FragmentScope.java" />
 
     <instantiate from="src/app_package/classes/BaseActivity.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/view/impl/BaseActivity.java" />
+       to="${escapeXmlAttribute(srcOut)}/ui/base/BaseActivity.java" />
 
     <instantiate from="src/app_package/classes/BaseFragment.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/view/impl/BaseFragment.java" />
+       to="${escapeXmlAttribute(srcOut)}/ui/base/impl/BaseFragment.java" />
 
     <instantiate from="src/app_package/classes/BasePresenter.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/presenter/BasePresenter.java" />
+       to="${escapeXmlAttribute(srcOut)}/ui/base/BasePresenter.java" />
 
-    <instantiate from="src/app_package/classes/BaseInteractor.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/interactor/BaseInteractor.java" />   
+    <instantiate from="src/app_package/classes/BaseMvpViewModule.java.ftl"
+       to="${escapeXmlAttribute(srcOut)}/ui/base/BaseMvpViewModule.java" />
 
-    <instantiate from="src/app_package/classes/BasePresenterImpl.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/presenter/impl/BasePresenterImpl.java" />  
+    <instantiate from="src/app_package/classes/MvpView.java.ftl"
+       to="${escapeXmlAttribute(srcOut)}/ui/base/MvpBiew.java" />
 
-    <instantiate from="src/app_package/classes/PresenterFactory.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/presenter/loader/PresenterFactory.java" />
-
-    <instantiate from="src/app_package/classes/PresenterLoader.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/presenter/loader/PresenterLoader.java" />  
+    <instantiate from="src/app_package/classes/Presenter.java.ftl"
+       to="${escapeXmlAttribute(srcOut)}/ui/base/Presenter.java" />
 </recipe>

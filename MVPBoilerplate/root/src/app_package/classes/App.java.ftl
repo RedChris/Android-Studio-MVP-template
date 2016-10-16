@@ -7,13 +7,11 @@ import ${packageName}.injection.AppComponent;
 import ${packageName}.injection.AppModule;
 import ${packageName}.injection.DaggerAppComponent;
 
-public final class ${appClass} extends Application
-{
+public final class ${appClass} extends Application {
     private AppComponent mAppComponent;
 
     @Override
-    public void onCreate()
-    {
+    public void onCreate() {
         super.onCreate();
 
         mAppComponent = DaggerAppComponent.builder()
@@ -22,8 +20,12 @@ public final class ${appClass} extends Application
     }
 
     @NonNull
-    public AppComponent getAppComponent()
-    {
+    public AppComponent getAppComponent() {
         return mAppComponent;
+    }
+
+    @VisibleForTesting
+    public void setAppComponent(AppComponent appComponent) {
+      mAppComponent = applicationComponent;
     }
 }

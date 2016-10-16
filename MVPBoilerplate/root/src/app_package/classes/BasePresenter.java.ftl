@@ -1,4 +1,4 @@
-package ${packageName}.presenter;
+package ${packageName}.ui.base;
 
 import android.support.annotation.NonNull;
 
@@ -21,7 +21,7 @@ public interface BasePresenter<V>
     void onStart(boolean firstStart);
 
     /**
-     * Called every time the view stops. After this method, the view will be null until next 
+     * Called every time the view stops. After this method, the view will be null until next
      * {@link #onStart(boolean)} call.
      */
     void onStop();

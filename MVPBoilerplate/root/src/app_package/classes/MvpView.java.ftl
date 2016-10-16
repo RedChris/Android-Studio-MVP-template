@@ -1,6 +1,4 @@
-package ${packageName}.presenter;
-
-import android.support.annotation.NonNull;
+package ${packageName}.ui.base;
 
 public interface MvpView {
 

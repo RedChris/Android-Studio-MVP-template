@@ -18,7 +18,7 @@
        to="${escapeXmlAttribute(srcOut)}/ui/base/BaseActivity.java" />
 
     <instantiate from="src/app_package/classes/BaseFragment.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/ui/base/impl/BaseFragment.java" />
+       to="${escapeXmlAttribute(srcOut)}/ui/base/BaseFragment.java" />
 
     <instantiate from="src/app_package/classes/BasePresenter.java.ftl"
        to="${escapeXmlAttribute(srcOut)}/ui/base/BasePresenter.java" />
@@ -27,7 +27,7 @@
        to="${escapeXmlAttribute(srcOut)}/ui/base/BaseMvpViewModule.java" />
 
     <instantiate from="src/app_package/classes/MvpView.java.ftl"
-       to="${escapeXmlAttribute(srcOut)}/ui/base/MvpBiew.java" />
+       to="${escapeXmlAttribute(srcOut)}/ui/base/MvpView.java" />
 
     <instantiate from="src/app_package/classes/Presenter.java.ftl"
        to="${escapeXmlAttribute(srcOut)}/ui/base/Presenter.java" />

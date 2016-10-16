@@ -2,6 +2,7 @@ package ${packageName}.injection;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.app.Application;
 
 import ${packageName}.${appClass};
 

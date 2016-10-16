@@ -2,6 +2,7 @@ package ${packageName};
 
 import android.app.Application;
 import android.support.annotation.NonNull;
+import android.support.annotation.VisibleForTesting;
 
 import ${packageName}.injection.AppComponent;
 import ${packageName}.injection.AppModule;
@@ -26,6 +27,6 @@ public final class ${appClass} extends Application {
 
     @VisibleForTesting
     public void setAppComponent(AppComponent appComponent) {
-      mAppComponent = applicationComponent;
+      mAppComponent = appComponent;
     }
 }

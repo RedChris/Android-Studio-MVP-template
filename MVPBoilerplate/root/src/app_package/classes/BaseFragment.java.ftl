@@ -13,8 +13,13 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setupComponent(App.get(this).getAppComponent());
+        setupComponent(${appClass}.get(this).getAppComponent());
     }
 
+    /**
+     * Setup the injection component for this view
+     *
+     * @param appComponent the app component
+     */
     protected abstract void setupComponent(@NonNull AppComponent appComponent);
 }

@@ -1,10 +1,8 @@
-package ${packageName}.presenter.impl;
+package ${packageName}.ui.base;
 
 public interface Presenter<V extends MvpView> {
 
-    @Override
     public void onViewReady();
 
-    @Override
     public void onDestroy();
 }
